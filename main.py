@@ -4,7 +4,7 @@ from langchain.llms import OpenAI
 from langchain import PromptTemplate, LLMChain
 
 # Initialize OpenAI API key (use an environment variable for deployment)
-openai_api_key = st.secrets["OPENAI_API_KEY"]
+openai_api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 
 # Set up LangChain components
 llm = OpenAI(api_key=openai_api_key)
